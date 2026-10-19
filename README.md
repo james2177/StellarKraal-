@@ -392,3 +392,8 @@ website https://kraal-bloom-connect.lovable.app/
 
 MIT © StellarKraal
 .
+
+## Handsoff notes
+
+<!-- handsoff-issue-1376 -->
+- #1376: Improve smart contract interface docs with CLI examples
