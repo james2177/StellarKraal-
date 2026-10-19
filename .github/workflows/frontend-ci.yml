@@ -128,3 +128,11 @@ jobs:
           if [ -n "$report" ]; then
             node scripts/lighthouse-summary.js "$report"
           fi
+
+      - name: Upload Lighthouse report artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-report
+          path: .lighthouseci/
+          retention-days: 7
