@@ -17,6 +17,7 @@
     "migrate:check": "db-migrate check --config database.json --env dev",
     "migrate:create": "db-migrate create --config database.json --sql-file",
     "migrate:reset": "db-migrate reset --config database.json --env dev",
+    "db:seed": "ts-node -P tsconfig.json scripts/seed.ts",
     "docs": "typedoc",
     "lint:fix": "eslint src --fix",
     "format": "prettier --write src",
